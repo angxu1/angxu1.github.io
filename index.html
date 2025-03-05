@@ -1,7 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ang Xu</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    /* Header and Navigation */
+    header {
+      background: #f4f4f4;
+      padding: 20px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      overflow: hidden;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo h1 {
+      font-size: 1.8em;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      background: #e2e2e2;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+    /* Sections */
+    section {
+      padding: 60px 0;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-title h2 {
+      font-size: 2em;
+      border-bottom: 2px solid #333;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+    .content {
+      max-width: 800px;
+      margin: auto;
+    }
+    .education-list, .publications-list, .talks-list {
+      list-style: none;
+      margin: 20px 0;
+    }
+    .education-list li,
+    .publications-list li,
+    .talks-list li {
+      margin-bottom: 15px;
+    }
+    /* Contact */
+    #contact a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <!-- Header with Navigation -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <h1>Your Name</h1>
+        </div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Ang Xu</h1>
+      <p>Ph.D. Student in Industrial Engineering and Operations Research at University of California, Berkeley</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Me</h2>
+      </div>
+      <div class="content">
+        <p>
+            I am a Ph.D. student in the Department of Industrial Engineering and Operations Research (IEOR) at the University of California, Berkeley, where I am fortunate to be advised by Professor <a href="https://yanchiwei.github.io/" Chiwei Yan></a>. Previously, I received my M.S. in Data Science in the University of Michigan. My research focuses on improving transportation and logistics systems using techniques of optimization and stochastic modeling.
+        </p>
+      </div>
+      <div class="section-title">
+        <h2>Education</h2>
+      </div>
+      <div class="content">
+        <ul class="education-list">
+          <li>
+            <strong>University of California, Berkeley</strong><br>
+            Ph.D. in Industrial Engineering and Operations Research <br>
+            <em>09/2023 - Present</em>
+          </li>
+          <li>
+            <strong>University of Michigan</strong><br>
+            B.S. and M.S. in Data Science <br>
+            <em>09/2019 - 05/2022</em>
+          </li>
+          <li>
+            <strong>Shanghai Jiao Tong University</strong><br>
+            B.S. in Electrical and Computer Engineering <br>
+            <em>09/2017 - 07/2021</em>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+
+  <!-- Publications Section -->
+  <section id="publications">
+    <div class="container">
+      <div class="section-title">
+        <h2>Publications</h2>
+      </div>
+      <div class="content">
+        <ul class="publications-list">
+          <li>
+            <strong>
+            <a href="https://example.com/your-paper.pdf" target="_blank">
+                A Locational Demand Model for Bike-Sharing
+            </a>
+            </strong><br>
+            <em>Manufacturing and Service Operations Management, Accepted</em>
+          </li>
+          <li>
+            <strong>Dispatching and Pricing in Two-Sided Spatial
+                Queues</strong><br>
+            <em>Working Paper</em>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+      <div class="content">
+        <p>Email: <a href="mailto:angxu@berkeley.edu">angxu@berkeley.edu</a></p>
+        <p>Follow me on <a href="https://github.com/angxu1" target="_blank">GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ang Xu. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
