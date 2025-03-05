@@ -110,6 +110,25 @@
         margin: 10px 0;
       }
     }
+
+    .about-container {
+    display: flex;
+    align-items: center; /* Vertically centers the image with the text */
+    gap: 20px; /* Space between the image and the text */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+    }
+
+    .profile-photo {
+    width: 150px;           /* Adjust size as needed */
+    border-radius: 50%;     /* Makes the photo round */
+    flex-shrink: 0;         /* Prevents the image from shrinking */
+    }
+
+    /* Optional: Style the text container */
+    .about-text {
+    flex: 1;                /* Allows the text to take up remaining space */
+    }
+
   </style>
 </head>
 <body>
@@ -118,7 +137,7 @@
     <div class="container">
       <nav>
         <div class="logo">
-          <h1>Your Name</h1>
+          <h1>Ang Xu</h1>
         </div>
         <ul>
           <li><a href="#about">About</a></li>
@@ -143,6 +162,12 @@
       <div class="section-title">
         <h2>About Me</h2>
       </div>
+
+      <div class="about-container">
+        <img src="images/myphoto.jpg" alt="angxu" class="profile-photo">
+        <div class="about-text">
+        </div>
+
       <div class="content">
         <p>
             I am a Ph.D. student in the Department of Industrial Engineering and Operations Research (IEOR) at the University of California, Berkeley, where I am fortunate to be advised by Professor <a href="https://yanchiwei.github.io/" Chiwei Yan></a>. Previously, I received my M.S. in Data Science in the University of Michigan. My research focuses on improving transportation and logistics systems using techniques of optimization and stochastic modeling.
@@ -185,7 +210,7 @@
         <ul class="publications-list">
           <li>
             <strong>
-            <a href="https://example.com/your-paper.pdf" target="_blank">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3311371" target="_blank">
                 A Locational Demand Model for Bike-Sharing
             </a>
             </strong><br>
@@ -209,7 +234,6 @@
       </div>
       <div class="content">
         <p>Email: <a href="mailto:angxu@berkeley.edu">angxu@berkeley.edu</a></p>
-        <p>Follow me on <a href="https://github.com/angxu1" target="_blank">GitHub</a></p>
       </div>
     </div>
   </section>
