@@ -114,20 +114,20 @@
     .about-container {
     display: flex;
     align-items: center; /* Vertically centers the image with the text */
-    gap: 20px; /* Space between the image and the text */
-    flex-wrap: wrap; /* Wrap on smaller screens */
+    gap: 20px; /* Adds space between the image and the text */
+    flex-wrap: wrap; /* Ensures a good layout on smaller screens */
     }
 
     .profile-photo {
-    width: 150px;           /* Adjust size as needed */
-    border-radius: 50%;     /* Makes the photo round */
-    flex-shrink: 0;         /* Prevents the image from shrinking */
+    width: 150px;       /* Adjust to your desired image size */
+    border-radius: 50%; /* Optional: gives the photo a round shape */
+    flex-shrink: 0;     /* Prevents the image from shrinking on small screens */
     }
 
-    /* Optional: Style the text container */
     .about-text {
-    flex: 1;                /* Allows the text to take up remaining space */
+    flex: 1;            /* Allows the text to take up the remaining space */
     }
+
 
   </style>
 </head>
@@ -169,9 +169,6 @@
       <div class="about-container">
         <img src="images/myphoto.jpg" alt="angxu" class="profile-photo">
         <div class="about-text">
-        </div>
-
-      <div class="content">
         <p>
             I am a Ph.D. student in the Department of Industrial Engineering and Operations Research (IEOR) at the University of California, Berkeley, where I am fortunate to be advised by Professor <a href="https://yanchiwei.github.io/">Chiwei Yan</a>. Previously, I received my M.S. in Data Science in the University of Michigan. My research focuses on improving transportation and logistics systems using techniques of optimization and stochastic modeling.
         </p>
