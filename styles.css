@@ -34,6 +34,7 @@ a:hover {
 .page {
   display: grid;
   grid-template-columns: 150px minmax(0, 1fr);
+  width: 100%;
   min-height: 100vh;
 }
 
@@ -71,6 +72,7 @@ a:hover {
 }
 
 .content {
+  width: 100%;
   padding: 18px 26px 34px;
 }
 
@@ -113,13 +115,10 @@ li {
 }
 
 .intro {
-  display: block;
-}
-
-.intro::after {
-  clear: both;
-  content: "";
-  display: table;
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 26px;
+  align-items: start;
 }
 
 .intro-text {
@@ -128,9 +127,9 @@ li {
 
 .photo-placeholder,
 .profile-photo {
-  display: grid;
-  width: 210px;
-  height: 260px;
+  display: block;
+  width: 300px;
+  height: 330px;
   border: 1px solid var(--border);
 }
 
@@ -145,9 +144,6 @@ li {
 }
 
 .profile-photo {
-  display: block;
-  float: left;
-  margin: 0 22px 12px 0;
   object-fit: cover;
   object-position: 43% center;
 }
@@ -192,7 +188,7 @@ code {
   font-size: 0.92em;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .page {
     grid-template-columns: 116px minmax(0, 1fr);
   }
@@ -224,9 +220,21 @@ code {
     padding: 16px 12px;
   }
 
+  .intro {
+    display: block;
+  }
+
   .photo-placeholder,
   .profile-photo {
+    float: left;
+    margin: 0 18px 12px 0;
     width: min(100%, 240px);
     height: 280px;
+  }
+
+  .intro::after {
+    clear: both;
+    content: "";
+    display: table;
   }
 }
