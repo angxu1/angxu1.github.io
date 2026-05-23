@@ -1,257 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ang Xu</title>
-  <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-    }
-    /* Header and Navigation */
-    header {
-      background: #f4f4f4;
-      padding: 20px 0;
-      border-bottom: 1px solid #ddd;
-    }
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      overflow: hidden;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav .logo h1 {
-      font-size: 1.8em;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-    }
-    nav ul li {
-      margin-left: 20px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      background: #e2e2e2;
-      padding: 100px 20px;
-    }
-    .hero h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2em;
-    }
-    /* Sections */
-    section {
-      padding: 60px 0;
-    }
-    .section-title {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .section-title h2 {
-      font-size: 2em;
-      border-bottom: 2px solid #333;
-      display: inline-block;
-      padding-bottom: 10px;
-    }
-    .content {
-      max-width: 800px;
-      margin: auto;
-    }
-    .education-list, .publications-list, .talks-list {
-      list-style: none;
-      margin: 20px 0;
-    }
-    .education-list li,
-    .publications-list li,
-    .talks-list li {
-      margin-bottom: 15px;
-    }
-    /* Contact */
-    #contact a {
-      color: #333;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    /* Footer */
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-    }
-    /* Responsive Styles */
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-      }
-      nav ul li {
-        margin: 10px 0;
-      }
-    }
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal academic website for Ang Xu.">
+    <title>Ang Xu</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar" aria-label="Site navigation">
+        <nav>
+          <p class="nav-title">Home</p>
+          <a class="active" href="index.html">About me</a>
+          <a href="publications.html">Publications</a>
+          <a href="experiences.html">Experiences</a>
+          <a href="cv.html">CV</a>
+        </nav>
+      </aside>
 
-    section {
-    margin: 40px 0; /* or however much space you want */
-    }
+      <main class="content">
+        <h1>Ang Xu</h1>
 
-    .about-container {
-    display: flex;
-    align-items: center; /* Vertically centers the image with the text */
-    gap: 20px; /* Adds space between the image and the text */
-    flex-wrap: wrap; /* Ensures a good layout on smaller screens */
-    }
+        <section class="intro">
+          <img class="profile-photo" src="profile.jpg" alt="Portrait of Ang Xu">
+          <div class="intro-text">
+            <p>
+              I am a Ph.D. student in the Department of Industrial Engineering
+              and Operations Research at the University of California, Berkeley,
+              where I am advised by Professor
+              <a href="https://yanchiwei.github.io/">Chiwei Yan</a>.
+            </p>
+            <p>
+              My research focuses on data-driven modeling and optimization,
+              with applications in transportation, logistics, and service
+              systems. I am especially interested in combining machine learning,
+              queueing theory, and optimization to design operational policies
+              for complex, spatially distributed systems.
+            </p>
+          </div>
+        </section>
 
-    .profile-photo {
-    width: 150px;       /* Adjust to your desired image size */
-    border-radius: 50%; /* Optional: gives the photo a round shape */
-    flex-shrink: 0;     /* Prevents the image from shrinking on small screens */
-    }
-
-    .about-text {
-    flex: 1;            /* Allows the text to take up the remaining space */
-    }
-
-
-  </style>
-</head>
-<body>
-  <!-- Header with Navigation -->
-  <header>
-    <div class="container">
-      <nav>
-        <div class="logo">
-          <h1>Ang Xu</h1>
-        </div>
+        <h2>Contact</h2>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>E-mail: angxu AT berkeley DOT edu</li>
         </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-
-    
-
-    <div class="container">
-      <h1>Ang Xu</h1>
-      <p>Ph.D. Student in Industrial Engineering and Operations Research at University of California, Berkeley</p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <!-- About Section -->
-<section id="about">
-    <div class="container">
-      <div class="section-title">
-        <h2>About Me</h2>
-      </div>
-      <div class="about-container">
-        <img src="images/myphoto.jpg" alt="angxu" class="profile-photo">
-        <div class="about-text">
-          <p>
-            I am a Ph.D. student in the Department of Industrial Engineering and Operations Research (IEOR) at the University of California, Berkeley, where I am fortunate to be advised by Professor <a href="https://yanchiwei.github.io/">Chiwei Yan</a>. Previously, I received my M.S. in Data Science in the University of Michigan. My research focuses on improving transportation and logistics systems using techniques of optimization and stochastic modeling.
-          </p>
-        </div>
-      </div> <!-- This closes the about-container -->
-    </div>
-  </section>
-  
-  <!-- Education Section -->
-  <section id="education">
-    <div class="container">
-      <div class="section-title">
         <h2>Education</h2>
-      </div>
-      <div class="content">
-        <ul class="education-list">
+        <ul class="plain-list">
           <li>
             <strong>University of California, Berkeley</strong><br>
-            Ph.D. in Industrial Engineering and Operations Research <br>
-            <em>09/2023 - Present</em>
+            Ph.D. in Industrial Engineering and Operations Research, 2023 - Present<br>
+            Advisor: Chiwei Yan
           </li>
           <li>
             <strong>University of Michigan</strong><br>
-            B.S. and M.S. in Data Science <br>
-            <em>09/2019 - 05/2022</em>
+            M.S. in Data Science, 2021 - 2022<br>
+            B.S.E. in Data Science, 2019 - 2021
           </li>
           <li>
             <strong>Shanghai Jiao Tong University</strong><br>
-            B.S. in Electrical and Computer Engineering <br>
-            <em>09/2017 - 07/2021</em>
+            B.E. in Electrical and Computer Engineering, 2017 - 2021
           </li>
         </ul>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Publications Section -->
-  <section id="publications">
-    <div class="container">
-      <div class="section-title">
-        <h2>Publications</h2>
-      </div>
-      <div class="content">
-        <ul class="publications-list">
-          <li>
-            <strong>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3311371" target="_blank">
-                A Locational Demand Model for Bike-Sharing
-            </a>
-            </strong><br>
-            <em>Manufacturing and Service Operations Management, Accepted</em>
-          </li>
-          <li>
-            <strong>Dispatching and Pricing in Two-Sided Spatial
-                Queues</strong><br>
-            <em>Working Paper</em>
-          </li>
+
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Data-driven modeling and optimization</li>
+          <li>Machine learning for operational decision-making</li>
+          <li>Transportation and logistics systems</li>
+          <li>Queueing theory and service systems</li>
         </ul>
-      </div>
+      </main>
     </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
-      <div class="content">
-        <p>Email: <a href="mailto:angxu@berkeley.edu">angxu@berkeley.edu</a></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Ang Xu. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
+  </body>
 </html>
